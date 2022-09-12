@@ -1,9 +1,11 @@
 package com.Patterns;
-
+import java.util.*;
 public class PatternSix {
 
 	public static void main(String[] args) {
-		int n=10;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the value: ");
+		int n=sc.nextInt();
 		int spaces;
 		spaces=n/2;
 		int stars=1;
@@ -12,10 +14,9 @@ public class PatternSix {
 				System.out.print(" ");
 			}
 			for(int j=1;j<=stars;j++) {
-				if(j==1||j==stars)
-				System.out.print("N");
-				else
-					System.out.print(" ");
+				
+				System.out.print("x");
+				
 			}
 			System.out.println();
 			if(i<n/2) {
@@ -29,3 +30,20 @@ public class PatternSix {
 		}
 	}
 }
+
+/*
+Inputs:-
+Enter the value: 
+10
+Output:-
+    x
+   xxx
+  xxxxx
+ xxxxxxx
+xxxxxxxxx
+ xxxxxxx
+  xxxxx
+   xxx
+    x
+    
+*/
