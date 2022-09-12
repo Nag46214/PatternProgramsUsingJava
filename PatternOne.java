@@ -16,7 +16,8 @@ public class PatternOne
     }
   }
 }
-/*Input format
+/*
+Inputs:-
 Enter the size 
 7
 Output:-
@@ -28,6 +29,7 @@ x x x x x x x
 x x x x x x x 
 x x x x x x x 
 
+*/
 
 
 
