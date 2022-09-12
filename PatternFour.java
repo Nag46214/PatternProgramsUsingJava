@@ -10,7 +10,7 @@ public class PatternFour
 		{
 			for(int j=n;j>=i;j--) 
 			{
-				System.out.print(j);
+				System.out.print(j+" ");
 			}
 			System.out.println();
 		}
