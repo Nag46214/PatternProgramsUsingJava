@@ -1,32 +1,37 @@
 package com.Patterns;
-
+import java.util.*;
 public class PatternThree {
 
 	public static void main(String[] args) {
-		int n=6;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the value: ");
+		int n=sc.nextInt();
 		int stars=1;
-		//int spaces=n-1;
+		int spaces=n-1;
 		for(int i=1;i<=n;i++) {
-			for(int j=n-i;j>=1;j--) {
+			for(int j=spaces;j>=1;j--) {
 				System.out.print(" ");
 			}
 			for(int j=1;j<=stars;j++) {
-				if(j==1||i==n||j==stars)
 				System.out.print("$");
-				else
-					System.out.print("0");
 			}
 			System.out.println();
 			stars+=2;
-			//spaces--;
+			spaces--;
 		}
 	}
 }
 /*
-$
-$0$
-$000$
-$00000$
-$0000000$
-$$$$$$$$$$$
+Enter the value: 
+10
+         $
+        $$$
+       $$$$$
+      $$$$$$$
+     $$$$$$$$$
+    $$$$$$$$$$$
+   $$$$$$$$$$$$$
+  $$$$$$$$$$$$$$$
+ $$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$
 */
